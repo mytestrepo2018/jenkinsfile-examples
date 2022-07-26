@@ -11,10 +11,13 @@ caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 checks-api:1.7.4
 cloudbees-folder:6.729.v2b_9d1a_74d673
 command-launcher:84.v4a_97f2027398
+configuration-as-code:1512.vb_79d418d5fc8
 credentials-binding:523.vd859a_4b_122e6
 credentials:1139.veb_9579fca_33b_
 display-url-api:2.3.6
 docker-commons:1.19
+docker-java-api:3.2.13-37.vf3411c9828b9
+docker-plugin:1.2.9
 docker-workflow:1.29
 durable-task:496.va67c6f9eefa7
 echarts-api:5.3.3-1
@@ -97,3 +100,4 @@ workflow-multibranch:716.vc692a_e52371b_
 workflow-scm-step:400.v6b_89a_1317c9a_
 workflow-step-api:639.v6eca_cd8c04a_a_
 workflow-support:833.va_1c71061486b_
+
