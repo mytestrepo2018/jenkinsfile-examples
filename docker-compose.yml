@@ -3,12 +3,19 @@ version: '3.5'
 services:
 
   jenkins:
+    restart: always
+    environment:
+      JAVA_OPTS: -Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION=true -Djenkins.install.runSetupWizard=false
     image: docker.io/hoto/jenkinsfile-examples
     build: .
     ports:
     - target: 8080
       published: 8080
     volumes:
+    - type: bind
+      source: '/var/jenkins_home/'
+      target: '/var/jenkins_home/'
+      read_only: false
     - type: bind
       source: '/var/run/docker.sock'
       target: '/var/run/docker.sock'
